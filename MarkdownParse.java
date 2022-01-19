@@ -18,12 +18,16 @@ public class MarkdownParse {
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
         }
+        //System.out.println(currentIndex);
         return toReturn;
     }
     public static void main(String[] args) throws IOException {
 		Path fileName = Path.of(args[0]);
 	    String contents = Files.readString(fileName);
-        ArrayList<String> links = getLinks(contents);
-        System.out.println(links);
+        if ((contents.contains("["))) {
+            ArrayList<String> links = getLinks(contents);
+            System.out.println(links);
+        }
+        
     }
 }
