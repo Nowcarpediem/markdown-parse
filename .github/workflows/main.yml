@@ -32,19 +32,19 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          echo javac MarkdownParse.java 
+          echo java MarkdownParse my-test.md
+          echo java MarkdownParse my-test2.md
+          echo java MarkdownParse my-test3.md
+          echo java MarkdownParse my-test4.md
+          echo java MarkdownParse my-test5.md
+          echo java MarkdownParse test-file.md
+          echo java MarkdownParse test-file2.md
+          echo java MarkdownParse test-file3.md
+          echo java MarkdownParse test-file4.md
+          echo java MarkdownParse test-file5.md
+          echo java MarkdownParse test-file6.md
+          echo java MarkdownParse test-file7.md
+          echo java Markdown)arse test-file8.md
           echo javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" MarkdownParseTest.java
           echo java -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest
-          echo javac MarkdownParse.java 
-          echo java Markdownparse my-test.md
-          echo java Markdownparse my-test2.md
-          echo java Markdownparse my-test3.md
-          echo java Markdownparse my-test4.md
-          echo java Markdownparse my-test5.md
-          echo java Markdownparse test-file.md
-          echo java Markdownparse test-file2.md
-          echo java Markdownparse test-file3.md
-          echo java Markdownparse test-file4.md
-          echo java Markdownparse test-file5.md
-          echo java Markdownparse test-file6.md
-          echo java Markdownparse test-file7.md
-          echo java Markdownparse test-file8.md
