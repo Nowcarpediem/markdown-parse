@@ -8,13 +8,8 @@ import java.util.ArrayList;
 import org.junit.*;
 
 public class MarkdownParseTest<T> {
-    MarkdownParseTest<T> newT = new MarkdownParseTest<T>();
-    public static void main(String[] args) {
-        MarkdownParseTest<T> newT = new MarkdownParseTest<Integer>();
-    }
-
- 
-    
+   
+  
     @Test
     public void addition() {
         assertEquals(2, 1 + 1);
